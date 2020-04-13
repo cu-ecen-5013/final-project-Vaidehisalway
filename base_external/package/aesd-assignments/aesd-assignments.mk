@@ -6,7 +6,7 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = 5eaa5a62be17e6792181269d78e777bc33c128c8
+AESD_ASSIGNMENTS_VERSION = ca3b8fc2a01659e029764fb4c53d7a5776dab16c
 AESD_ASSIGNMENTS_SITE = git@github.com:cu-ecen-5013/assignment-3-manual-kernel-and-root-filesystem-build-Vaidehisalway.git
 AESD_ASSIGNMENTS_SITE_METHOD = git
 
@@ -22,13 +22,8 @@ $(eval $(kernel-module))
 
 #TODO: Add required executables or scripts below
 define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
-	$(INSTALL) -m 0755 $(@D)/writer $(TARGET_DIR)/bin
-	$(INSTALL) -m 0755 $(@D)/tester.sh $(TARGET_DIR)/bin
-	$(INSTALL) -m 0755 $(@D)/finder.sh $(TARGET_DIR)/bin
-	$(INSTALL) -m 0755 $(@D)/aesdsocket $(TARGET_DIR)/usr/bin
-	$(INSTALL) -m 0755 $(@D)/sockettest.sh $(TARGET_DIR)/bin
-	$(INSTALL) -m 0755 $(@D)/aesd-socket-start-stop.sh $(TARGET_DIR)/etc/	init.d/S99aesdsocket
-
+	$(INSTALL) -m 0755 $(@D)/Hello $(TARGET_DIR)/bin
+	
 endef
 
 
