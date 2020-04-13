@@ -16,9 +16,6 @@ define AESD_ASSIGNMENTS_BUILD_CMDS
 	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D) all
 endef
 
-AESD_ASSIGNMENTS_MODULE_SUBDIRS = aesd-char-driver
-
-$(eval $(kernel-module))
 
 #TODO: Add required executables or scripts below
 define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
