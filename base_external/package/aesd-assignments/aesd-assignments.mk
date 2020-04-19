@@ -6,8 +6,8 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = ca3b8fc2a01659e029764fb4c53d7a5776dab16c
-AESD_ASSIGNMENTS_SITE = git@github.com:cu-ecen-5013/assignment-3-manual-kernel-and-root-filesystem-build-Vaidehisalway.git
+AESD_ASSIGNMENTS_VERSION = 7a35802b52d0ce3d9aa2612e374f4f21766aee9e
+AESD_ASSIGNMENTS_SITE = git@github.com:cu-ecen-5013/final-project-Kushagra42.git
 AESD_ASSIGNMENTS_SITE_METHOD = git
 
 
@@ -19,7 +19,7 @@ endef
 
 #TODO: Add required executables or scripts below
 define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
-	$(INSTALL) -m 0755 $(@D)/Hello $(TARGET_DIR)/bin
+	$(INSTALL) -m 0755 $(@D)/uart $(TARGET_DIR)/bin
 	
 endef
 
