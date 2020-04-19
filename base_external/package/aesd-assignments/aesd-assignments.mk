@@ -6,7 +6,7 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = 7a35802b52d0ce3d9aa2612e374f4f21766aee9e
+AESD_ASSIGNMENTS_VERSION = 74b3d4f899e8a304777dead4f1b940e17cadd6d5
 AESD_ASSIGNMENTS_SITE = git@github.com:cu-ecen-5013/final-project-Kushagra42.git
 AESD_ASSIGNMENTS_SITE_METHOD = git
 
@@ -19,7 +19,8 @@ endef
 
 #TODO: Add required executables or scripts below
 define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
-	$(INSTALL) -m 0755 $(@D)/uart $(TARGET_DIR)/bin
+	$(INSTALL) -m 0755 $(@D)/uart_write $(TARGET_DIR)/bin
+	$(INSTALL) -m 0755 $(@D)/uart_read $(TARGET_DIR)/bin
 	
 endef
 
