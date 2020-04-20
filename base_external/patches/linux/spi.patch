@@ -41,9 +41,7 @@ index 7519b71..4cef01c 100644
 +		>;
 +	};
 +
- 	uart0_pins: pinmux_uart0_pins {
- 		pinctrl-single,pins = <
- 			0x170 (PIN_INPUT_PULLUP | MUX_MODE0)	/* uart0_rxd.uart0_rxd */
+
 diff --git a/arch/arm/boot/dts/am335x-bone-spi1-spidev.dtsi b/arch/arm/boot/dts/am335x-bone-spi1-spidev.dtsi
 new file mode 100644
 index 0000000..24013d8a6b
