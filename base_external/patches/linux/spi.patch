@@ -8,7 +8,7 @@ Signed-off-by: Robert Nelson <robertcnelson@gmail.com>
  arch/arm/boot/dts/am335x-bone-common.dtsi | 21 +++++++++++++++++++
  arch/arm/boot/dts/am335x-bone-spi1-spidev.dtsi   | 26 ++++++++++++++++++++++++
  arch/arm/boot/dts/am335x-bone-spi1a-spidev.dtsi  | 26 ++++++++++++++++++++++++
- arch/arm/boot/dts/am335x-boneblack.dts           | 14 +++++++++++++
+ arch/arm/boot/dts/am335x-bone-common.dtsi           | 14 +++++++++++++
  4 files changed, 87 insertions(+)
  create mode 100644 arch/arm/boot/dts/am335x-bone-spi1-spidev.dtsi
  create mode 100644 arch/arm/boot/dts/am335x-bone-spi1a-spidev.dtsi
@@ -111,8 +111,8 @@ index 0000000..b2185dd
 +};
 diff --git a/arch/arm/boot/dts/am335x-boneblack.dts b/arch/arm/boot/dts/am335x-boneblack.dts
 index 364e728..5778f3b 100644
---- a/arch/arm/boot/dts/am335x-boneblack.dts
-+++ b/arch/arm/boot/dts/am335x-boneblack.dts
+--- a/arch/arm/boot/dts/am335x-bone-common.dtsi
++++ b/arch/arm/boot/dts/am335x-bone-common.dtsi
 @@ -31,6 +31,20 @@
  /* spi0: P9.17, P9.18, P9.21, P9.22 */
  /* #include "am335x-bone-spi0-spidev.dtsi" */
