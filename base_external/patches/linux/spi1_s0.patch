@@ -23,7 +23,7 @@ index 9abc1f3&i2c2 {
 +		>;
 +	};
 +
-	clkout2_pin: pinmux_clkout2_pin {
+	spi0_pins: pinmux_spi0_pins {
 		pinctrl-single,pins = <
 @@ -189,5 +198,20 @@
 	status = "okay";
@@ -45,6 +45,9 @@ index 9abc1f3&i2c2 {
 +};
 +
 
+ &spi0 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&spi0_pins>;
 -- 
 2.17.2
 
