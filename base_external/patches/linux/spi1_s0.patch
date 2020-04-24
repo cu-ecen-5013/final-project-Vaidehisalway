@@ -14,7 +14,7 @@ index 9abc1f3&i2c2 {
  		>;
  	
 
-+	spi1_pins: pinmux_spi1_pins_s0 {
++	spi1_pins_s0: pinmux_spi1_pins_s0 {
 +		pinctrl-single,pins = <
 +                                0x190 0x33      /* mcasp0_aclkx.spi1_sclk, INPUT_PULLUP | MODE3 */
 +                                0x194 0x33      /* mcasp0_fsx.spi1_d0, INPUT_PULLUP | MODE3 */
@@ -23,29 +23,28 @@ index 9abc1f3&i2c2 {
 +		>;
 +	};
 +
-	spi0_pins: pinmux_spi0_pins {
+	clkout2_pin: pinmux_clkout2_pin {
 		pinctrl-single,pins = <
 @@ -189,5 +198,20 @@
+	status = "okay";
+ };
 
 +&spi1 {
-+	pinctrl-names = "default";
-+	pinctrl-0 = <&spi1_pins>;
++	#address-cells = <1>;
++             #size-cells = <0>;
++             status = "okay";
++             pinctrl-names = "default";
++             pinctrl-0 = <&spi1_pins_s0>;
 +
-+	status = "okay";
-+
-+       spidev@1 {
-+		spi-max-frequency = <24000000>;
-+        	reg = <0>;
-+               compatible = "linux,spidev";
-+		#address-cells = <1>;
-+            	#size-cells = <0>;
-+     	};
++             spidev@1 {
++                 spi-max-frequency = <24000000>;
++                 reg = <0>;
++                 compatible = "linux,spidev";
++            };
 +};
 +
-
- &spi0 {
-	pinctrl-names = "default";
-	pinctrl-0 = <&spi0_pins>;
+ &usb {
+	status = "okay";
 -- 
 2.17.2
 
