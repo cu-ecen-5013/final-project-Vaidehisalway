@@ -26,8 +26,6 @@ index 9abc1f3&i2c2 {
 	spi0_pins: pinmux_spi0_pins {
 		pinctrl-single,pins = <
 @@ -189,5 +198,20 @@
-	status = "okay";
- };
 
 +&spi1 {
 +	pinctrl-names = "default";
