@@ -6,7 +6,7 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = f140ce89ead09f7fc3b7db62fb19d29168f3bf9d
+AESD_ASSIGNMENTS_VERSION =  14a9868bbe94dd75bda7e25f78099f75b999361d
 AESD_ASSIGNMENTS_SITE = git@github.com:cu-ecen-5013/final-project-Kushagra42.git
 AESD_ASSIGNMENTS_SITE_METHOD = git
 
@@ -24,6 +24,7 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/uart_ReadWrite $(TARGET_DIR)/bin
 	$(INSTALL) -m 0755 $(@D)/uart_Rasp_ARD_WR $(TARGET_DIR)/bin
 	$(INSTALL) -m 0755 $(@D)/UART2_Temp $(TARGET_DIR)/bin
+        $(INSTALL) -m 0755 $(@D)/All_Data_Sync $(TARGET_DIR)/bin
 	$(INSTALL) -m 0755 $(@D)/Si7021 $(TARGET_DIR)/bin
 	$(INSTALL) -m 0755 $(@D)/Client $(TARGET_DIR)/bin
 	$(INSTALL) -m 0755 $(@D)/Server $(TARGET_DIR)/bin
