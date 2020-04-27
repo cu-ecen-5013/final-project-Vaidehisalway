@@ -26,7 +26,10 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/Comparison_mode $(TARGET_DIR)/bin
 	$(INSTALL) -m 0755 $(@D)/bme280 $(TARGET_DIR)/bin
 	$(INSTALL) -m 0755 $(@D)/main $(TARGET_DIR)/bin
-
+	$(INSTALL) -m 0755 $(@D)/Client $(TARGET_DIR)/bin
+	$(INSTALL) -m 0755 $(@D)/Server $(TARGET_DIR)/bin
+	$(INSTALL) -m 0755 $(@D)/main $(TARGET_DIR)/bin
+	$(INSTALL) -m 0755 $(@D)/Comparison_mode $(TARGET_DIR)/bin
 	
 endef
 
