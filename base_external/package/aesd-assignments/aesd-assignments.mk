@@ -25,9 +25,10 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/uart_Rasp_ARD_WR $(TARGET_DIR)/bin
 	$(INSTALL) -m 0755 $(@D)/UART2_Temp $(TARGET_DIR)/bin
         $(INSTALL) -m 0755 $(@D)/All_Data_Sync $(TARGET_DIR)/bin
-	$(INSTALL) -m 0755 $(@D)/Si7021 $(TARGET_DIR)/bin
 	$(INSTALL) -m 0755 $(@D)/Client $(TARGET_DIR)/bin
 	$(INSTALL) -m 0755 $(@D)/Server $(TARGET_DIR)/bin
+	$(INSTALL) -m 0755 $(@D)/main $(TARGET_DIR)/bin
+	$(INSTALL) -m 0755 $(@D)/Comparison_mode $(TARGET_DIR)/bin
 	
 endef
 
