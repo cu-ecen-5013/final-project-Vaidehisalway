@@ -6,7 +6,7 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = 68c812282484fb032fefbe854092cce5c00ce029 
+AESD_ASSIGNMENTS_VERSION = 0479ef488794e5ce4caadde117a70770e874d141 
 AESD_ASSIGNMENTS_SITE = git@github.com:cu-ecen-5013/final-project-Kushagra42.git
 AESD_ASSIGNMENTS_SITE_METHOD = git
 
@@ -29,6 +29,7 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/Server $(TARGET_DIR)/bin
 	$(INSTALL) -m 0755 $(@D)/Comparison_mode $(TARGET_DIR)/bin
 	$(INSTALL) -m 0755 $(@D)/Temp_Test $(TARGET_DIR)/bin
+	$(INSTALL) -m 0755 $(@D)/bme280 $(TARGET_DIR)/bin
 
 	
 endef
